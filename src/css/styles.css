@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
+:root {
+  --fonts:
+    'Share Tech Mono',
+    'Trebuchet MS',
+    'Lucida Sans Unicode',
+    'Lucida Grande',
+    'Lucida Sans',
+    arial,
+    sans-serif;
+}
+
 body {
   background: rgb(255, 255, 239);
 }
@@ -20,14 +31,7 @@ body {
   border-radius: 5%;
   box-shadow: 15px -15px 10px 12px rgba(0, 0, 0, 0.5);
   font-size: 24px;
-  font-family:
-    'Share Tech Mono',
-    'Trebuchet MS',
-    'Lucida Sans Unicode',
-    'Lucida Grande',
-    'Lucida Sans',
-    arial,
-    sans-serif;
+  font-family: var(--fonts);
 }
 
 .dice-number-position {
@@ -89,12 +93,5 @@ body {
   color: whitesmoke;
   background: rgb(91, 39, 143);
   font-size: 24px;
-  font-family:
-    'Share Tech Mono',
-    'Trebuchet MS',
-    'Lucida Sans Unicode',
-    'Lucida Grande',
-    'Lucida Sans',
-    arial,
-    sans-serif;
+  font-family: var(--fonts);
 }
