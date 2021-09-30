@@ -1,0 +1,34 @@
+(function(e){typeof define=="function"&&define.amd?define(e):e()})(function(){"use strict";const e=document.getElementsByClassName("btn"),i=document.getElementById("dice"),s=()=>~~(Math.random()*6)+1;e[0].addEventListener("click",()=>{switch(s()){case 1:i.innerHTML=`
+    <div class="dice-number-position-1">
+      <div class="number center"></div>
+    </div>`;break;case 2:i.innerHTML=`
+      <div class="dice-number-position-2">
+      <div class="number left top"></div>
+      <div class="number right bottom"></div>
+    </div>`;break;case 3:i.innerHTML=`
+      <div class="dice-number-position-3">
+      <div class="number left top"></div>
+      <div class="number center"></div>
+      <div class="number right bottom"></div>
+    </div>`;break;case 4:i.innerHTML=`
+      <div class="dice-number-position-4">
+      <div class="number left top"></div>
+      <div class="number left bottom"></div>
+      <div class="number right top"></div>
+      <div class="number right bottom"></div>
+    </div>`;break;case 5:i.innerHTML=`
+      <div class="dice-number-position-5">
+      <div class="number left top"></div>
+      <div class="number left bottom"></div>
+      <div class="number center"></div>
+      <div class="number right top"></div>
+      <div class="number right bottom"></div>
+    </div>`;break;case 6:i.innerHTML=`
+      <div class="dice-number-position-6">
+      <div class="number left top"></div>
+      <div class="number left center"></div>
+      <div class="number left bottom"></div>
+      <div class="number right top"></div>
+      <div class="number right center"></div>
+      <div class="number right bottom"></div>
+    </div>`;break}})});
