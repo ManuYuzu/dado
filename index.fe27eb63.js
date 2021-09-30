@@ -1,29 +1,29 @@
-(function(e){typeof define=="function"&&define.amd?define(e):e()})(function(){"use strict";const e=document.getElementsByClassName("btn"),i=document.getElementById("dice"),s=()=>~~(Math.random()*6)+1;e[0].addEventListener("click",()=>{switch(s()){case 1:i.innerHTML=`
+const o=function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))n(e);new MutationObserver(e=>{for(const i of e)if(i.type==="childList")for(const r of i.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&n(r)}).observe(document,{childList:!0,subtree:!0});function d(e){const i={};return e.integrity&&(i.integrity=e.integrity),e.referrerpolicy&&(i.referrerPolicy=e.referrerpolicy),e.crossorigin==="use-credentials"?i.credentials="include":e.crossorigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function n(e){if(e.ep)return;e.ep=!0;const i=d(e);fetch(e.href,i)}};o();const c=document.getElementsByClassName("btn"),t=document.getElementById("dice"),l=()=>~~(Math.random()*6)+1;c[0].addEventListener("click",()=>{switch(l()){case 1:t.innerHTML=`
     <div class="dice-number-position-1">
       <div class="number center"></div>
-    </div>`;break;case 2:i.innerHTML=`
+    </div>`;break;case 2:t.innerHTML=`
       <div class="dice-number-position-2">
       <div class="number left top"></div>
       <div class="number right bottom"></div>
-    </div>`;break;case 3:i.innerHTML=`
+    </div>`;break;case 3:t.innerHTML=`
       <div class="dice-number-position-3">
       <div class="number left top"></div>
       <div class="number center"></div>
       <div class="number right bottom"></div>
-    </div>`;break;case 4:i.innerHTML=`
+    </div>`;break;case 4:t.innerHTML=`
       <div class="dice-number-position-4">
       <div class="number left top"></div>
       <div class="number left bottom"></div>
       <div class="number right top"></div>
       <div class="number right bottom"></div>
-    </div>`;break;case 5:i.innerHTML=`
+    </div>`;break;case 5:t.innerHTML=`
       <div class="dice-number-position-5">
       <div class="number left top"></div>
       <div class="number left bottom"></div>
       <div class="number center"></div>
       <div class="number right top"></div>
       <div class="number right bottom"></div>
-    </div>`;break;case 6:i.innerHTML=`
+    </div>`;break;case 6:t.innerHTML=`
       <div class="dice-number-position-6">
       <div class="number left top"></div>
       <div class="number left center"></div>
@@ -31,4 +31,4 @@
       <div class="number right top"></div>
       <div class="number right center"></div>
       <div class="number right bottom"></div>
-    </div>`;break}})});
+    </div>`;break}});
