@@ -2,53 +2,50 @@ const button = document.getElementsByClassName('btn')
 const dice = document.getElementById('dice')
 
 const index = () => ~~(Math.random() * 6) + 1
-
-
-button[0].addEventListener('click', () => {
-  
-  switch (index()) {
-    case 1: dice.innerHTML = `
-    <div class="dice-number-position-1">
+const rollTheDice = () => {
+   switch (index()) {
+     case 1: dice.innerHTML = `
+    <div class="dice-number-position">
       <div class="number center"></div>
     </div>`
-    break
+       break
 
-    case 2: dice.innerHTML = `
-      <div class="dice-number-position-2">
+     case 2: dice.innerHTML = `
+      <div class="dice-number-position">
       <div class="number left top"></div>
       <div class="number right bottom"></div>
     </div>`
-    break
+       break
 
-    case 3: dice.innerHTML = `
-      <div class="dice-number-position-3">
+     case 3: dice.innerHTML = `
+      <div class="dice-number-position">
       <div class="number left top"></div>
       <div class="number center"></div>
       <div class="number right bottom"></div>
     </div>`
-    break
+       break
 
-    case 4: dice.innerHTML = `
-      <div class="dice-number-position-4">
+     case 4: dice.innerHTML = `
+      <div class="dice-number-position">
       <div class="number left top"></div>
       <div class="number left bottom"></div>
       <div class="number right top"></div>
       <div class="number right bottom"></div>
     </div>`
-    break
+       break
 
-    case 5: dice.innerHTML = `
-      <div class="dice-number-position-5">
+     case 5: dice.innerHTML = `
+      <div class="dice-number-position">
       <div class="number left top"></div>
       <div class="number left bottom"></div>
       <div class="number center"></div>
       <div class="number right top"></div>
       <div class="number right bottom"></div>
     </div>`
-    break
+       break
 
-    case 6: dice.innerHTML = `
-      <div class="dice-number-position-6">
+     case 6: dice.innerHTML = `
+      <div class="dice-number-position">
       <div class="number left top"></div>
       <div class="number left center"></div>
       <div class="number left bottom"></div>
@@ -56,6 +53,8 @@ button[0].addEventListener('click', () => {
       <div class="number right center"></div>
       <div class="number right bottom"></div>
     </div>`
-    break
-  }
-})
+       break
+   }
+}
+
+button[0].addEventListener('click', rollTheDice)
